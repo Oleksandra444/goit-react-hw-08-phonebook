@@ -10,6 +10,7 @@ list-style: none;
 display: flex;
 gap: 20px;
 align-items: center;
+flex-wrap: wrap;
 `
 
 
