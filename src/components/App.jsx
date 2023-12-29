@@ -1,37 +1,46 @@
-
 import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { GlobalStyle } from "./GlobalStyle";
-import { ContactForm } from "./ContactForm/ContactForm";
-import { ContactList } from "./ContactList/ContactList";
-import { ContactFilter } from "./ContactFilter/ContactFilter";
-import { SectionTitle, Layout } from "./App.styled";
-import { fetchContacts } from 'redux/api';
+import { useEffect, lazy } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { Layout } from './Layout';
+import { refreshUser } from 'redux/api';
+import { PrivateRoute } from './PrivateRoute';
+import { RestrictedRoute } from './RestrictedRoute';
 
+const HomePage = lazy(() => import('../pages/Home/Home.js'));
+const RegisterPage = lazy(() => import('../pages/Register/Register.js'));
+const LoginPage = lazy(() => import('../pages/Login/Login.js'));
+const ContactsPage = lazy(() => import('../pages/Contacts/Contacts.js'));
 
-
-export const App = () => { 
+export function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchContacts());
+    dispatch(refreshUser());
   }, [dispatch]);
 
-
-  
-
   return (
-      <div>
-        <Layout>
-        <SectionTitle>Phonebook</SectionTitle>
-        <ContactForm />
-        <SectionTitle>Contacts</SectionTitle>
-        <ContactFilter />
-        <ContactList /> 
-          <GlobalStyle />
-          </Layout>
-      </div>
-    );
-
-
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />} />
+        <Route
+          path="/register"
+          element={
+            <RestrictedRoute component={RegisterPage} redirectTo="/contacts" />
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <RestrictedRoute component={LoginPage} redirectTo="/contacts" />
+          }
+        />
+        <Route
+          path="/contacts"
+          element={
+            <PrivateRoute component={ContactsPage} redirectTo="/login" />
+          }
+        />
+      </Route>
+    </Routes>
+  );
 }
