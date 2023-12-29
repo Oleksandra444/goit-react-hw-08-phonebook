@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.01b177f7.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.e4aa7fd9.js",
     "static/js/526.4d80b4b2.chunk.js": "/goit-react-hw-08-phonebook/static/js/526.4d80b4b2.chunk.js",
     "static/js/511.19956774.chunk.js": "/goit-react-hw-08-phonebook/static/js/511.19956774.chunk.js",
     "static/js/231.dfe1cd49.chunk.js": "/goit-react-hw-08-phonebook/static/js/231.dfe1cd49.chunk.js",
-    "static/js/228.6a038ddf.chunk.js": "/goit-react-hw-08-phonebook/static/js/228.6a038ddf.chunk.js",
-    "static/js/444.c85bcd36.chunk.js": "/goit-react-hw-08-phonebook/static/js/444.c85bcd36.chunk.js",
+    "static/js/177.c4a3cf1d.chunk.js": "/goit-react-hw-08-phonebook/static/js/177.c4a3cf1d.chunk.js",
+    "static/js/590.6aed76ba.chunk.js": "/goit-react-hw-08-phonebook/static/js/590.6aed76ba.chunk.js",
     "static/media/bcgyellow.png": "/goit-react-hw-08-phonebook/static/media/bcgyellow.e3ef43efba398745338e.png",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.01b177f7.js.map": "/goit-react-hw-08-phonebook/static/js/main.01b177f7.js.map",
+    "main.e4aa7fd9.js.map": "/goit-react-hw-08-phonebook/static/js/main.e4aa7fd9.js.map",
     "526.4d80b4b2.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/526.4d80b4b2.chunk.js.map",
     "511.19956774.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/511.19956774.chunk.js.map",
     "231.dfe1cd49.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/231.dfe1cd49.chunk.js.map",
-    "228.6a038ddf.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/228.6a038ddf.chunk.js.map",
-    "444.c85bcd36.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/444.c85bcd36.chunk.js.map"
+    "177.c4a3cf1d.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/177.c4a3cf1d.chunk.js.map",
+    "590.6aed76ba.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/590.6aed76ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.01b177f7.js"
+    "static/js/main.e4aa7fd9.js"
   ]
 }
