@@ -1,5 +1,6 @@
-import { FcPhoneAndroid } from 'react-icons/fc';
-import { ContactCardWrappper, ContactCardValue, ContactCardDelButton,ContactValuedWrappper } from './ContactCard.styled';
+
+import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
+import { ContactCardWrappper, ContactCardValue, ContactCardDelButton,ContactValuedWrappper, IconWrapper } from './ContactCard.styled';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/api';
 
@@ -15,8 +16,10 @@ export const ContactCard = ({ name, number, id}) => {
     return (
     <>
         <ContactCardWrappper>
-            <ContactValuedWrappper>
-            <FcPhoneAndroid/>
+                <ContactValuedWrappper>
+                    <IconWrapper>
+                        <HiOutlineDevicePhoneMobile />
+                        </IconWrapper>
                 <ContactCardValue>{name} : {number}</ContactCardValue>
                 </ContactValuedWrappper>
             <ContactCardDelButton onClick={onDelete}>Delete</ContactCardDelButton>

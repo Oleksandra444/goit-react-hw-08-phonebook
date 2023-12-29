@@ -14,17 +14,18 @@ export const Form = styled(FormikForm)`
 
 export const Field = styled(FormikField)`
   
-  font: inherit;
-  border: 4px solid #4682B4;
-border-radius: 0.35em;
-width:200px;
+  /* font: inherit; */
+  border: 3px solid #eac645;
+border-radius: 25px;
+width:250px;
 padding: 4px 10px;
-background: transparent; 
+background: white; 
 &:hover, &:focus {
-  border: 4px solid #404BBF;
-  border-radius: 0.35em;
+  /* border: 3px solid #404BBF;
+  border-radius: 25px; */
   /* color: #404BBF; */
-  outline: none; 
+  outline: none;
+  background: white; 
   }
 
    
@@ -34,26 +35,35 @@ export const FormGroup = styled.label`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #eac645;
 `;
 
 export const ErrorMessage = styled(FormikError)`
   color: red;
-  font-size: 16px;
+  font-size: 14px;
 `;
 
 export const ContactAddButton = styled.button`
-padding: 5px 5px;
-font-size: 14px;
-width: 150px;
-text-transform: uppercase;
-background-color: #4682B4;
-border: 4px solid #4682B4;
-border-radius: 0.35em;
-color: white;
+ color: #eac645;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 2px solid #eac645;
+  width: 150px; 
+  height: 50px; 
+  border-radius: 25px;   
+  background-color: #392f2f;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-&:hover {
-  border: 4px solid #404BBF;
-  border-radius: 0.35em;
-  color: #404BBF;
-  background-color: white; 
-  }`
+  &:hover {
+    background-color: #eac645;
+    color: white;}`

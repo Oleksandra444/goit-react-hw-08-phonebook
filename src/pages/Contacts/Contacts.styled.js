@@ -1,4 +1,34 @@
+import styled from 'styled-components';
 
+export const ContactFormBox = styled.div`
+  margin: 0 10px 20px 10px;
+  width: 300px;
+  border-bottom: 1px solid #2a363b;
+  background-color: #392f2f;
+  border: 3px solid #eac645;
+  border-radius: 30px;
+  padding: 10px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap:60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.768), 0 16px 20px rgba(39, 37, 37, 0.2);
+
+
+
+`;
+export const ContactListBox = styled.div`
+
+
+
+`;
+
+export const ContactPageBox = styled.div`
+display: flex;
+gap: 20px;
+
+
+
+`
 
 
 

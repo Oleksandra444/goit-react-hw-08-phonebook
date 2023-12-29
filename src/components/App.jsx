@@ -6,6 +6,7 @@ import { refreshUser } from 'redux/api';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
 
+
 const HomePage = lazy(() => import('../pages/Home/Home.js'));
 const RegisterPage = lazy(() => import('../pages/Register/Register.js'));
 const LoginPage = lazy(() => import('../pages/Login/Login.js'));
@@ -17,6 +18,8 @@ export function App() {
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);
+
+  
 
   return (
     <Routes>
@@ -41,6 +44,8 @@ export function App() {
           }
         />
       </Route>
+      
     </Routes>
+    
   );
 }

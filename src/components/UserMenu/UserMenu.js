@@ -14,7 +14,7 @@ export const UserMenu = () => {
 
   return (
     <Container>
-      <Text>Wellcome, {name}</Text>
+      <Text>Welcome, {name}</Text>
       {/* <StarIcon color="white"></StarIcon> */}
       <button type="button" onClick={handleLogOut}>
         <LogText>LogOut</LogText>

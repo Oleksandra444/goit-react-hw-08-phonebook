@@ -1,16 +1,25 @@
 import styled from 'styled-components';
-import background from '../img/bcgyellow.png'
+import background from '../img/bcgyellow.png';
+import isPropValid from '@emotion/is-prop-valid';
 
-export const LowerLayout = styled.div`
-/* max-width: 1120px; */
-margin: 0;
-padding: 0;
- background-image: url(${background});
-background-size: cover; 
-  background-position:center; 
+
+export const LowerLayout = styled.div.withConfig({
+  shouldForwardProp: (prop) => isPropValid(prop),
+})`
+  margin: 0;
+  padding: 0;
+  background-image: url(${background});
+  background-size: cover; 
+  background-position: center; 
   background-repeat: no-repeat; 
   min-height: 100vh;
   display: flex; 
   flex-direction: column;
-  /* opacity: 0.4; */
-`
+  
+  ${(props) =>
+    props.iscontactspage === "true" &&
+    `
+    background-image: none;
+    background-color: #f7c928;
+  `}
+`;
